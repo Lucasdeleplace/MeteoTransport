@@ -1,0 +1,135 @@
+/* Styles généraux */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Titres */
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Icône météo */
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+/* Informations météo */
+.weather p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Sélecteur de ville */
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    color: #2193b0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Bouton d'actualisation */
+button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+/* Adaptation mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #weather-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    select, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Adaptation pour très petits écrans */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #weather-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    select, button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+}
