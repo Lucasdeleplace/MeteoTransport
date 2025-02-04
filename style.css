@@ -49,23 +49,6 @@ h2 {
     margin: 10px 0;
 }
 
-/* Sélecteur de ville */
-select {
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    background: white;
-    color: #2193b0;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-select:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-}
-
 /* Bouton d'actualisation */
 button {
     background: #ff9800;
