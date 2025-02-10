@@ -26,7 +26,7 @@ Une application web simple qui affiche les conditions météorologiques en temps
 1. Clonez ce dépôt :
 
 ```bash
-git clone [URL_DU_REPO]
+git clone https://github.com/Lucasdeleplace/MeteoTransport.git
 ```
 2. Configurez la ville dans le fichier `conf.json`
 
